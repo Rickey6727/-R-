@@ -1,15 +1,15 @@
-/* global $ */
+/* global jQuery */
 
-$(window).on("scroll", function($) {
-  if ($(this).scrollTop() > 200) {
-    $('.floating').fadeIn(1000);
+jQuery(window).on("scroll", function($) {
+  if (jQuery(this).scrollTop() > 200) {
+    jQuery('.floating').fadeIn(1000);
   } else {
-    $('.floating').fadeOut(1000);
+    jQuery('.floating').fadeOut(1000);
   }
 });
 
-$('.floating').click(function () {
-  $('body,html').animate({
+jQuery('.floating').click(function () {
+  jQuery('body,html').animate({
     scrollTop: 0
   }, 1500);
   return false;
@@ -17,10 +17,10 @@ $('.floating').click(function () {
 
 
 
-$(window).on("scroll", function($) {
-  if ($(this).scrollTop() > 600) {
-    $('header').fadeIn(1000);
+jQuery(window).on("scroll", function($) {
+  if (jQuery(this).scrollTop() > 600) {
+    jQuery('header').fadeIn(1000);
   } else {
-    $('header').fadeOut(1000);
+    jQuery('header').fadeOut(1000);
   }
 });
