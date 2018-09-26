@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset = "utf-8">
+    <title> gallery [R] </title>
+    <meta name="description" content="検索結果に表示">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="javascripts/jquery.js"></script>
+    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY"></script>-->
+    <!--<script type="text/javascript" src="javascripts/jquery.googlemap.js"></script>-->
+    <!--<script src="js/jquery-1.9.1.min.js"></script>-->
+  </head>
+  <body>
+    <div id="loader-bg">
+      <div id="loading">
+        <img src="main-img/gallery.png">
+      </div>
+    </div>
+    
+    <div id="main">
+      <header id="top">
+        <img src="main-img/gallery.png">
+      </header>
+      
+      <div class="menu-tab">
+        <div class="menu-tab-btn">
+          ≡
+        </div>
+        <div class="menu-tab-contents">
+          <li><a href='./index.html'>portfolio [R]</a></li>
+          <li><a href="#">gallery [R]</a></li>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="main-slide">
+          <img src="main-img/main1.png">
+          <img src="main-img/main2.png">
+          <img src="main-img/main3.png">
+        </div>
+        <div class="main-slide-btn">
+          <p id="left" class="left"><a href="javascript:void(0)" onClick="hogeFunction();return false;"><img src="main-img/pre-btn.png"></a></p>
+          <p id="right" class="right"><a href="javascript:void(0)" onClick="hogeFunction();return false;"><img src="main-img/next-btn.png"></a></p>
+        </div>
+        
+        <div class="sub-slides">
+          <!-- ミニスライド1 -->
+          <div class="content">
+            <div class="sub-slide sub-slide1">
+              <img src="main-img/main1.png"></img>
+              <img src="main-img/main2.png"></img>
+              <img src="main-img/main3.png"></img>
+            </div>
+            <div class="sub-slide-btn sub-slide-btn1">
+              <p id="left" class="left"><a href="javascript:void(0)" onClick="hogeFunction();return false;"><img src="main-img/pre-btn.png"></a></p>
+              <p id="right" class="right"><a href="javascript:void(0)" onClick="hogeFunction();return false;"><img src="main-img/next-btn.png"></a></p>
+            </div>
+            <div class="info-container">
+              <p>SHIBUYA</p>
+              <div id="map" style=""><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10364.983820985572!2d139.69193985802477!3d35.65944748969697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5riL6LC36aeF!5e0!3m2!1sja!2sjp!4v1536725407852" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+            </div>
+          </div>
+          
+          <!-- ミニスライド2 -->
+          <div class="content">
+            <div class="sub-slide sub-slide2">
+              <img src="main-img/main1.png"></img>
+              <img src="main-img/main2.png"></img>
+              <img src="main-img/main3.png"></img>
+            </div>
+            <div class="sub-slide-btn sub-slide-btn2">
+              <p id="left" class="left"><a href="javascript:void(0)" onClick="hogeFunction();return false;"><img src="main-img/pre-btn.png"></a></p>
+              <p id="right" class="right"><a href="javascript:void(0)" onClick="hogeFunction();return false;"><img src="main-img/next-btn.png"></a></p>
+            </div>
+            <div class="info-container">
+              <p>KOBE</p>
+              <div id="map" style=""><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8370.597195593591!2d135.2343588193055!3d34.709858771382756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008c398af22943%3A0xf1e5a2b2144d4403!2z5YWt55Sy6YGT6aeF!5e0!3m2!1sja!2sjp!4v1536728421861" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+            </div>
+          </div>
+          
+          <!-- ミニスライド3 -->
+          <div class="content last-content">
+            <div class="sub-slide sub-slide3">
+              <img src="main-img/main1.png"></img>
+              <img src="main-img/main2.png"></img>
+              <img src="main-img/main3.png"></img>
+            </div>
+            <div class="sub-slide-btn sub-slide-btn3">
+              <p id="left" class="left"><a href="javascript:void(0)" onClick="hogeFunction();return false;"><img src="main-img/pre-btn.png"></a></p>
+              <p id="right" class="right"><a href="javascript:void(0)" onClick="hogeFunction();return false;"><img src="main-img/next-btn.png"></a></p>
+            </div>
+            <div class="info-container">
+              <p>KANAZAWA</p>
+              <div id="map" style=""><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16747.12340360466!2d136.64972947539115!3d36.57343398362099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8334203bb8605%3A0x5d5df6011ebba7ea!2z6YeR5rKi6aeF!5e0!3m2!1sja!2sjp!4v1536728488476" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="floating"><a href="#top">▲</a></div>
+      
+      <footer class="footer">
+        ©️PORTFOLIO [R]
+      </footer>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="slideshow.js"></script>
+    <script src="scroll.js"></script>
+    <script src="loading.js"></script>
+    <script src="accordion.js"></script>
+  </body>
+</html>
